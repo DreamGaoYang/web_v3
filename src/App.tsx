@@ -6,7 +6,7 @@ import { createIntl, createIntlCache, RawIntlProvider } from 'react-intl'
 import en_US from 'i18n/en_US.js'
 import zh_CN from 'i18n/zh_CN.js'
 
-import Home from 'views/Home'
+import Home from 'views/HomeV3'
 
 
 const messages: Record<string, Record<string, string>> = {
