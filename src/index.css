@@ -8,7 +8,6 @@
   src: url('./assets/font/Gotham-Light.otf')
 }
 
-
 body {
   font-family:
     LendingFont,
@@ -45,6 +44,9 @@ a {
   text-decoration: none !important
 }
 
+
+
+
 /* Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec */
 .Sec {
   width: 1200px;
@@ -56,6 +58,7 @@ a {
   width: 1154px;
   height: 353px;
   background: url('./assets/v3/bg-map.png') no-repeat;
+  background-size: 100% 100%;
 }
 
 .Sec-title {
@@ -78,6 +81,7 @@ a {
 }
 
 .Sec-btns {
+  padding-top: 40px;
   width: 488px;
   margin: 0 auto;
   display: flex;
@@ -122,12 +126,13 @@ a {
   width: 100%;
   position: relative;
   overflow: hidden;
+  padding-top: 180px;
 }
 
 .Gov--subpics {
   position: absolute;
   right: -70px;
-  top: 0;
+  top: 44px;
   z-index: -1;
 }
 
@@ -151,11 +156,13 @@ a {
   font-weight: 500;
   color: #FFFFFF;
   line-height: 30px;
+  padding-top: 30px;
 }
 
 .Gov-item-wrap {
   display: flex;
   justify-content: space-between;
+  padding-top: 50px;
 }
 
 .Gov-item {
@@ -218,18 +225,22 @@ a {
 }
 
 .Community-title--sub {
+  padding-top: 20px;
   text-align: center;
   font-size: 18px;
   font-weight: normal;
   color: #FFFFFF;
   line-height: 32px;
   opacity: 0.7;
+  width: 1100px;
+  margin: 0 auto;
 }
 
 .Community-wrap {
   display: flex;
-  /* background-color: red; */
+  padding-top: 50px;
   justify-content: space-between;
+  padding-bottom: 200px;
 }
 
 .Community-item {
@@ -310,13 +321,14 @@ a {
   width: 100%;
   position: relative;
   overflow: hidden;
+  padding-top: 180px;
 }
 
 .Eco--subpics {
   width: 100%;
   position: absolute;
   left: -80px;
-  bottom: -20px;
+  bottom: 0px;
 }
 
 .Eco {
@@ -334,6 +346,8 @@ a {
 .Eco-item-wrap {
   display: flex;
   justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 180px;
 }
 
 .Eco-item {

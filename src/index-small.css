@@ -1,264 +1,287 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
 
-  .title {
-    height: 40px;
-    font-size: 22px;
-    font-weight: 900;
-    color: #151515;
-    margin-bottom: 0px;
-  }
-
-  .title-item {
-    height: 32px;
-    font-size: 16px;
-    margin-bottom: 0px;
-  }
-
-  .title-sub {
+  /* Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec */
+  .Sec {
     width: 100%;
-    font-size: 18px;
-    line-height: 30px;
-    margin-bottom: 30px;
+    padding: 0 30px;
   }
 
-  .title-sub-item {
-    font-size: 14px;
-    line-height: 24px;
-
-  }
-
-  .color-fff {
-    color: #fff;
-  }
-
-  .Protocols-Wrap {
-    background-color: #fff;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  .Security {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  .Investors {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  .Investors-title {
-    margin-bottom: 24px;
-  }
-
-  .Protocols {
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .slogan-wrap {
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 60px;
-    padding-bottom: 40px;
-  }
-
-  .total-wrap {
-    padding-top: 30px;
-    display: block;
-    justify-content: space-between;
-  }
-
-  .total-item {
-    width: 100%;
-    height: 100px;
-    padding: 15px;
-    /* display: flex;
-    justify-content: space-between; */
-    margin-bottom: 20px;
-  }
-
-  .total-title {
-    font-size: 16px;
-    line-height: 28px;
-  }
-
-  .total-value {
-    font-size: 24px;
-    line-height: 50px;
-    margin-top: 0px;
-  }
-
-  .slogan {
-    font-size: 34px;
-    margin-bottom: 28px;
-  }
-
-  .slogan-sub {
-    width: 100%;
-    font-size: 20px;
-    font-weight: normal;
-    color: #FFFFFF;
-    line-height: 40px;
-    margin-bottom: 40px;
-  }
-
-
-
-  .Items-Wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-
-  .Item {
+  .Sec-top {
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
-    background: #F4F4F4;
-    margin-right: 0px;
-    padding: 15px;
+    background: url('./assets/v3/bg-map.png') no-repeat;
+    background-size: contain;
   }
 
-  .Item:nth-child(3n) {
-    margin-right: 0;
+  .Sec-title {
+    padding-top: 70px;
+    font-size: 24px;
   }
 
-  .Item-img {
-    width: 32%;
-    height: 60px;
-    margin-bottom: 2vw;
-    background: rgba(255, 255, 255, 0.05);
-    position: relative;
-    margin-right: 2%;
+  .Sec-title-sub {
+    padding-top: 10px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 20px;
   }
 
-  .Item-img:nth-child(3n) {
-    margin-right: 0;
+  .Sec-btns {
+    padding-top: 20px;
+    width: 100%;
+    justify-content: space-around;
   }
 
-
-  .Item-img img {
-    width: 90%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-user-drag: none;
+  .Sec-btns-btn {
+    font-size: 12px;
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 20px;
   }
 
-  .btn-wrap {
+  .Sec-btns-btn--spe {
+    background: linear-gradient(90deg, #2D66F4 0%, #9F2DF4 100%);
+  }
+
+  .Sec-logos {
     display: flex;
-    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
   }
 
-  .btn {
-    width: 140px;
-    height: 40px;
-    line-height: 40px;
+  .Sec-logos-item {
+    width: 32%;
+    height: auto;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .Sec-logos-item img {
+    width: 100%;
+  }
+
+  /* Gov Gov Gov Gov GovGov GovGov Gov Gov Gov Gov Gov Gov Gov Gov Gov */
+  .Gov-wrap {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-top: 70px;
+  }
+
+  .Gov--subpics {
+    display: none;
+  }
+
+  .Gov {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .Gov-title {
+    font-size: 24px;
+  }
+
+  .Gov-title-sub {
+    width: 100%;
+    line-height: 20px;
+    padding-top: 10px;
+    font-size: 12px;
+  }
+
+  .Gov-item-wrap {
+    padding-top: 20px;
+    flex-direction: column;
+  }
+
+  .Gov-item {
+    width: 100%;
+    height: auto;
+    background: #17182B;
+    border-radius: 18px;
+    margin-bottom: 10px;
+  }
+
+  .Gov-proiect-name {
+    padding-top: 24px;
+    padding-bottom: 10px;
+  }
+
+  .Gov-proiect-name img {
+    height: 50px;
+  }
+
+  .Gov-proiect-content {
+    width: 80%;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .Gov-proiect-link-wrap {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .Gov-proiect-link {
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 35px;
     font-size: 14px;
   }
 
-  .btn img {
-    margin-left: 0px;
-    margin-right: 6px;
-    margin-bottom: -1px;
-  }
-
-  .APP {
-    width: 140px;
-    text-align: center;
-    height: 44px;
-    line-height: 44px;
-    font-size: 18px;
-    font-weight: 500;
-    color: #151515;
-  }
-
-  .btn2 {
-    /* line-height: 36px; */
-  }
-
-
-  /* footer */
-  .footer-wrap {
+  /* Community Community Community Community Community Community Community Community Community */
+  .Community {
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: block;
-    /* justify-content: space-between; */
-    padding-top: 30px;
-    padding-bottom: 50px;
-    margin-bottom: 20px;
+    padding: 0 30px;
   }
 
-  .footer-left {
-    display: block;
+  .Community-title {
+    font-size: 24px;
+  }
+
+  .Community-title--sub {
+    padding-top: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    width: 100%;
+  }
+
+  .Community-wrap {
+    padding-top: 20px;
+    padding-bottom: 70px;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .Community-item {
+    width: 32%;
+    height: auto;
+    border-radius: 20px;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .Community-img-wrap {
+    padding-top: 18px;
+  }
+
+  .Community-item img {
+    width: 28px;
+  }
+
+  .Community-item--title {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    font-size: 12px;
+  }
+
+  /* Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer */
+  .Footer-wrap {
+    display: none;
+    width: 100%;
+    height: 367px;
+    background: #17182B;
+  }
+
+  .Footer {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 70px;
+  }
+
+  .Footer-left {
+    width: 420px;
+  }
+
+  .Footer-rightWrap {
+    flex: 1;
+    display: flex;
     justify-content: space-between;
-    width: 100%;
   }
 
-  .menu-title {
-    height: 26px;
-    font-size: 16px;
+  .Footer-right--title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
     line-height: 36px;
   }
 
-  .menu-menu a {
-    font-family: LendingFont-light;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: normal;
-    color: #D4D9E0;
+  .logo-contact a,
+  .Footer-right--item a {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
     line-height: 38px;
-    padding-left: 0px;
-    padding-right: 10px;
   }
 
-  .footer-right {
-    width: 70%;
-    display: flex;
-    justify-content: flex-start;
-    /* flex-wrap: wrap; */
-    /* align-items: initial; */
-    height: 20px;
-    padding-top: 30px;
-    padding-bottom: 20px;
+  .logo-contact a:hover,
+  .Footer-right--item a:hover {
+    color: rgba(255, 255, 255, 1);
   }
 
-  .icon-wrap {
-    width: 25%;
-    text-align: left;
-    margin-bottom: 5px;
-  }
-
-  .icon-wrap img {
-    width: 24px;
-  }
-
-  .icon-wrap:nth-child(5n) img {
-    width: 20px;
-    margin-bottom: -4px;
-  }
-
-
-  .qrcode {
+  /* Eco Eco Eco Eco Eco Eco Eco Eco Eco Eco Eco Eco Eco Eco Eco */
+  .Eco-wrap {
+    width: 100%;
     position: relative;
+    overflow: hidden;
+    padding-top: 70px;
   }
 
-  .qrcode:hover .qrcode-wechat {
-    display: block;
-  }
-
-  .qrcode-wechat {
+  .Eco--subpics {
     display: none;
+  }
+
+  .Eco {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .Eco-title {
+    font-size: 24px;
+  }
+
+  .Eco-item-wrap {
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 70px;
+  }
+
+  .Eco-item {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-bottom: 60px;
+    margin-bottom: 10px;
+  }
+
+  .proiect-name {
+    padding-top: 18px;
+    padding-bottom: 10px;
+  }
+
+  .proiect-name img {
+    height: 26px;
+  }
+
+  .proiect-content {
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .proiect-link {
     position: absolute;
-    width: 80px !important;
-    height: 80px !important;
-    top: -95px;
-    right: -25px;
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .proiect-link img {
+    width: 23px;
+    height: 23px;
   }
 }
 
