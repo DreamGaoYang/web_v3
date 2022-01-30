@@ -45,7 +45,156 @@ a {
 }
 
 
+/* header */
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  /* position: relative;
+  left: 50%;
+  transform: translateX(-50%); */
+  padding-top: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom:150px
+}
 
+@media screen and (max-width: 768px) {
+  .header-wrap {
+    display: none;
+  }
+}
+
+.header-left {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-right .header-right-documents a {
+  font-size: 14px;
+  /* color: #5EAFE7 !important; */
+  color: #fff;
+}
+
+.header-right .header-right-documents a:hover {
+  color: #5EAFE7 !important;
+}
+.logo-wrap {
+  margin-right: 50px;
+}
+
+.logo-wrap img {
+  margin-top: -2px;
+}
+
+.target-wrap {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.target-wrap a,
+.target-wrap a:link,
+.target-wrap a:visited {
+  /* display: block; */
+  font-size: 14px;
+  /* font-weight: 400; */
+  color: #FFFFFF;
+  /* line-height: 20px; */
+}
+
+.target-wrap-item a:hover {
+  color: #5EAFE7;
+}
+
+.target-wrap-item {
+  position: relative;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.target-wrap-item:hover .target-wrap-item-list {
+  display: block;
+}
+
+.target-wrap-item-list {
+  position: absolute;
+  display: none;
+  min-width: 120px;
+  left: -15px;
+  top: 32px;
+  background: #262626;
+  border-radius: 4px;
+  /* background: gold; */
+  /* text-align: center; */
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  font-size: 14px;
+  font-weight: 400;
+  color: #D4D9E0;
+}
+
+.target-wrap-item-list a {
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+  line-height: 28px;
+
+  /* overflow-wrap: inherit; */
+  white-space: nowrap;
+}
+.cur-language {
+  margin-left: 50px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFFFFF;
+  /* background: red; */
+  padding-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.cur-language:hover .select-language {
+  display: block;
+}
+
+.select-language {
+  display: none;
+  position: absolute;
+  width: 120px;
+  right: 0;
+  top: 32px;
+  background: #262626;
+  border-radius: 4px;
+  /* background: gold; */
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  font-size: 14px;
+  font-weight: 400;
+  color: #D4D9E0;
+  line-height: 28px;
+}
+
+.select-item:hover {
+  color: #5EAFE7;
+  cursor: pointer;
+}
+
+.cur-language img {
+  margin-bottom: -3px;
+  margin-right: 8px;
+  margin-left: 4px;
+}
 
 /* Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec */
 .Sec {

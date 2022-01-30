@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 import styled from "styled-components"
 import { useIntl } from "react-intl"
 
+
+import Slogan from './components/Slogan'
+import Howtouse from './components/Howtouse'
+import Features from './components/Features'
 import Sec from './components/Sec'
 import Gov from './components/Gov'
 import Ecosystem from './components/Ecosystem'
@@ -35,6 +39,9 @@ const Home: React.FC<HomeProps> = ({ changeLanguage }) => {
 
   return (
     <>
+      <Slogan changeLanguage={changeLanguage} />
+      <Howtouse/>
+      <Features/>
       <Sec />
       <Gov />
       <Ecosystem />

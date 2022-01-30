@@ -1,4 +1,5 @@
 const zh_CN = {
+    Web3:'歪脖三',
     STAKE__new: '质押',
     STAKE_sub__new: '质押DF代币，获得通胀收益',
     FARM__LENDING: '借贷挖矿',
