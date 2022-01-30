@@ -17,7 +17,6 @@ interface HomeProps {
     changeLanguage: (newLocale: string) => void
 }
 
-
 const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
     const intl = useIntl()
     const intl_locale = intl.locale
@@ -28,7 +27,20 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
   const [showAssets, setAssets] = useState<boolean>(false)
   const [showGOVERNANCE, setGOVERNANCE] = useState<boolean>(false)
   const [showFARM, setFARM] = useState<boolean>(false)
-
+  const show_Menu = ()=>{
+    document.getElementsByTagName('body')[0].style.height = window.innerHeight+'px'; 
+    document.getElementsByTagName('body')[0].style.overflowY = "hidden"; 
+    (document.getElementById('slogan') as HTMLElement).style.backgroundColor = "#000"; 
+    (document.getElementById('slogan') as HTMLElement).style.zIndex = "9"; 
+    setShowMenu(true)
+  }
+  const hide_Menu = ()=>{
+    document.getElementsByTagName('body')[0].style.height = 'auto'; 
+    document.getElementsByTagName('body')[0].style.overflowY = "auto"; 
+    (document.getElementById('slogan') as HTMLElement).style.backgroundColor = "inherit"; 
+    (document.getElementById('slogan') as HTMLElement).style.zIndex = "9"; 
+    setShowMenu(false)
+  }
     return (
         <>
             {/* PC端头部 */}
@@ -113,15 +125,15 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
                     </div>
                 <div className={'header-right'}>
 
-                    <div className={'header-right-documents'}>
+                    {/* <div className={'header-right-documents'}>
                         <a href={
                             intl_locale === 'cn' ? 'https://docs-cn.dforce.network' : "https://docs.dforce.network"
                         } target='_blank'>
                             {fmt({ id: "Documents" })}
                         </a>
-                    </div>
+                    </div> */}
 
-                    <div className={'cur-language'}>
+                    {/* <div className={'cur-language'}>
                         <img src={language} alt="" />
                         <span >{intl_locale === 'cn' ? '简体中文' : intl_locale === 'en' ? 'English' : 'Language'}</span>
                         <img src={arrow_down} alt="" />
@@ -135,7 +147,7 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
                                 <span>English</span>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         {/* 手机端头部 */}
@@ -147,7 +159,7 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
                 <img src={logo} alt="" />
                 </LeftLogo>
 
-                <RightMenu onClick={() => { setShowMenu(false) }}>
+                <RightMenu onClick={hide_Menu}>
                 <img src={close_black} alt="" />
                 </RightMenu>
             </StyledHeader_m>
@@ -161,7 +173,7 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
 
                         <div className="menu-item">
                         <h1>
-                            <a href="https://app.dforce.network/#/lending" target='_blank' onClick={() => { setShowMenu(false) }}>
+                            <a href="https://app.dforce.network/#/lending" target='_blank' onClick={hide_Menu}>
                             <span>{fmt({ id: "LENDing" })}</span>
                             </a>
                         </h1>
@@ -173,17 +185,17 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
                             <img className={showAssets ? "rotate180" : ""} src={btn_up} />
                         </h1>
                         <div className={showAssets ? "items items-icons" : "items items-icons item-hidden"}>
-                            <a href="https://markets.dforce.network/" target='_blank' onClick={() => { setShowMenu(false) }}>
+                            <a href="https://markets.dforce.network/" target='_blank' onClick={hide_Menu}>
                             <span className="name">
                                 {fmt({ id: "YIELD_MARKETS" })}
                             </span>
                             </a>
-                            <a href="https://usdx.dforce.network/" target='_blank' onClick={() => { setShowMenu(false) }}>
+                            <a href="https://usdx.dforce.network/" target='_blank' onClick={hide_Menu}>
                             <span className="name">
                                 {'USDx'}
                             </span>
                             </a>
-                            <a href="https://goldx.dforce.network/" target='_blank' onClick={() => { setShowMenu(false) }}>
+                            <a href="https://goldx.dforce.network/" target='_blank' onClick={hide_Menu}>
                             <span className="name">
                                 {'GOLDx'}
                             </span>
@@ -193,7 +205,7 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
 
                         <div className="menu-item">
                         <h1>
-                            <a href="https://trade.dforce.network/" target='_blank' onClick={() => { setShowMenu(false) }}>
+                            <a href="https://trade.dforce.network/" target='_blank' onClick={hide_Menu}>
                             <span>{fmt({ id: "TRADE" })}</span>
                             </a>
                         </h1>
@@ -201,7 +213,7 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
 
                         {/* <div className="menu-item">
                         <h1>
-                            <a href="https://staking.dforce.network/" target='_blank' onClick={() => { setShowMenu(false) }}>
+                            <a href="https://staking.dforce.network/" target='_blank' onClick={hide_Menu}>
                             <span>{fmt({ id: "FARM" })}</span>
                             </a>
                         </h1>
@@ -213,17 +225,17 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
                             <img className={showFARM ? "rotate180" : ""} src={btn_up} />
                         </h1>
                         <div className={showFARM ? "items items-icons" : "items items-icons item-hidden"}>
-                            <a href="https://app.dforce.network/#/Mining" target='_blank' onClick={() => { setShowMenu(false) }}>
+                            <a href="https://app.dforce.network/#/Mining" target='_blank' onClick={hide_Menu}>
                             <span className="name">
                                 {fmt({ id: "FARM__LENDING" })}
                             </span>
                             </a>
-                            <a href="https://app.dforce.network/#/Liquidity" target='_blank' onClick={() => { setShowMenu(false) }}>
+                            <a href="https://app.dforce.network/#/Liquidity" target='_blank' onClick={hide_Menu}>
                             <span className="name">
                                 {fmt({ id: "FARM__LIQUIDITY" })}
                             </span>
                             </a>
-                            <a href="https://staking.dforce.network/" target='_blank' onClick={() => { setShowMenu(false) }}>
+                            <a href="https://staking.dforce.network/" target='_blank' onClick={hide_Menu}>
                             <span className="name">
                                 {fmt({ id: "FARM__LEGACY_LIQUIDITY" })}
                             </span>
@@ -237,17 +249,17 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
                             <img className={showGOVERNANCE ? "rotate180" : ""} src={btn_up} />
                         </h1>
                         <div className={showGOVERNANCE ? "items items-icons" : "items items-icons item-hidden"}>
-                            <a href="https://snapshot.org/#/dforcenet.eth" target='_blank' onClick={() => { setShowMenu(false) }}>
+                            <a href="https://snapshot.org/#/dforcenet.eth" target='_blank' onClick={hide_Menu}>
                             <span className="name">
                                 {fmt({ id: "VOTE" })}
                             </span>
                             </a>
-                            {/* <a href="https://airdrop.dforce.network/" target='_blank' onClick={() => { setShowMenu(false) }}>
+                            {/* <a href="https://airdrop.dforce.network/" target='_blank' onClick={hide_Menu}>
                             <span className="name">
                                 {fmt({ id: "AIRDROP" })}
                             </span>
                             </a> */}
-                            <a href="https://forum.dforce.network" target='_blank' onClick={() => { setShowMenu(false) }}>
+                            <a href="https://forum.dforce.network" target='_blank' onClick={hide_Menu}>
                             <span className="name">
                                 {fmt({ id: "FORUM" })}
                             </span>
@@ -255,22 +267,22 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
                         </div>
                         </div>
 
-                        <div className="menu-item">
+                        {/* <div className="menu-item">
                         <h1>
-                            <a onClick={() => { setShowMenu(false) }} href={
+                            <a onClick={hide_Menu} href={
                             intl_locale === 'cn' ? 'https://docs-cn.dforce.network' : "https://docs.dforce.network"
                             }
                             target='_blank'>
                             <span>{fmt({ id: "Documents" })}</span>
                             </a>
                         </h1>
-                        </div>
+                        </div> */}
 
 
 
 
 
-                        <div className="menu-item menu-item-last">
+                        {/* <div className="menu-item menu-item-last">
                         <h1 onClick={() => { setShowLanguage(!showLanguage) }}>
                             {intl_locale === 'cn' ? '简体中文' : intl_locale === 'en' ? 'English' : 'Language'}
                             <img className={showLanguage ? "rotate180" : ""} src={btn_up} />
@@ -283,7 +295,7 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
                             <span className="name">English</span>
                             </a>
                         </div>
-                        </div>
+                        </div> */}
 
                     </div>
                     </div>
@@ -295,13 +307,12 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
         {
             !showMenu &&
             <StyledHeader>
+                <RightMenu onClick={show_Menu} className='spec'>
+                    <img src={menu} alt="" />
+                </RightMenu>
             <LeftLogo>
                 <img src={logo_bai} alt="" />
             </LeftLogo>
-
-            <RightMenu onClick={() => { setShowMenu(true) }}>
-                <img src={menu} alt="" />
-            </RightMenu>
             </StyledHeader>
         }
         </>
@@ -313,7 +324,6 @@ const LeftLogo = styled.div``
 const RightMenu = styled.div`
   width: 22px;
   height: 22px;
-
   img{
     width: 100%;
     height: 100%;
@@ -340,12 +350,15 @@ const StyledHeader = styled.div`
   }
 
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 15px;
   margin-bottom: 80px;
   width: 100%;
+  .spec{
+      margin-right:20px;
+  }
 `
 const MobileMenu = styled.div`
   position: fixed;

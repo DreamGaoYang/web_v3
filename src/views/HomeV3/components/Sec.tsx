@@ -8,7 +8,7 @@ import Security_4 from 'assets/v3/Security-4.svg'
 import Security_5 from 'assets/v3/Security-5.svg'
 import Security_6 from 'assets/v3/Security-6.svg'
 import Security_7 from 'assets/v3/Security-7.png'
-import Security_8 from 'assets/v3/Security-8.svg'
+import Security_8 from 'assets/v3/Security-8.png'
 import Security_9 from 'assets/v3/Security-9.svg'
 
 
@@ -29,10 +29,10 @@ const Item: React.FC = () => {
                         Adhering to the best practice to build security-focused protocols with checks and balances that minimize potential risks.
                     </div>
                     <div className={'Sec-btns'}>
-                        <a href='#' className={'Sec-btns-btn'}>
+                        <a href="https://github.com/dforce-network/documents/tree/master/audit_report" className='Sec-btns-btn' target="_blank" rel="noreferrer">
                             Audit Reports
                         </a>
-                        <a href='#' className={'Sec-btns-btn Sec-btns-btn--spe'}>
+                        <a href="https://immunefi.com/bounty/dforce" className='Sec-btns-btn Sec-btns-btn--spe' target="_blank" rel="noreferrer">
                             Bug Bounty
                         </a>
                     </div>

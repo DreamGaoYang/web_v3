@@ -55,11 +55,11 @@ const Section = styled.section`
     width:1200px;
     height:auto;
     overflow: hidden;
-    margin: 180px auto 180px;
+    margin: -450px auto 0;
     flex-direction:column;
     @media (max-width: 767px) {
-        width:calc(100vw - 60px);
-        margin: 60px auto 0;
+        width:calc(100vw - 40px);
+        margin: -240px auto 0;
     }
 `
 const Title = styled.div`
@@ -80,9 +80,18 @@ const List = styled.ul`
 const Item = styled.li`
     width:50%;
     margin-bottom: 90px;
+    &:nth-child(3),&:nth-child(4){
+        margin-bottom: 0;
+    }
     @media (max-width: 767px) {
         width:100%;
         margin-bottom: 40px;
+        &:nth-child(3){
+            margin-bottom: 40px;
+        }
+        &:nth-child(4){
+            margin-bottom: 0;
+        }
     }
 `
 const Icon = styled.img`

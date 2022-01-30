@@ -13,7 +13,7 @@ const messages: Record<string, Record<string, string>> = {
   'en': en_US,
   'cn': zh_CN,
 };
-const local_lauguage = window.localStorage.getItem('lending-local-language')
+const local_lauguage = window.localStorage.getItem('lending-v3-local-language')
 const initialLocale = local_lauguage || 'en';
 const cache = createIntlCache();
 
@@ -30,7 +30,7 @@ const App: React.FC = () => {
       cache
     );
     console.log(newLocale)
-    window.localStorage.setItem('lendingv3-local-language', newLocale)
+    window.localStorage.setItem('lending-v3-local-language', newLocale)
     document.documentElement.lang = newLocale;
     setLocale(newLocale);
   };

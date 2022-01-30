@@ -1,5 +1,5 @@
 const en_US = {
-    Web3:'Web 3',
+    Web3:'Web3',
     STAKE__new: 'STAKE',
     STAKE_sub__new: 'Receive inflationary rewards by staking DF token (coming soon). ',
     FARM__LENDING: 'LENDING',

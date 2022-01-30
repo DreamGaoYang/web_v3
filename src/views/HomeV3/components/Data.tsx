@@ -59,7 +59,7 @@ const Section = styled.section`
     margin: 0 auto 0;
     flex-direction:column;
     @media (max-width: 767px) {
-        width: calc(100vw - 60px);
+        width: calc(100vw - 40px);
     }
 `
 const List = styled.ul`

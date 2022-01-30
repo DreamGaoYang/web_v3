@@ -20,14 +20,14 @@ const Slogan: React.FC<SloganProps> = ({changeLanguage}) => {
     // {/* {fmt({ id: "Investors" })} */}
 
     return (
-        <Section>
+        <Section id="slogan">
             <Header changeLanguage={changeLanguage}/>
             <Title>Multichain Infrastructure in </Title>
             <SubTitle>{fmt({id:'Web3'})}</SubTitle>
             <SmallTitle>
                 A complete set of decentralized finance protocols covering assets, lending, trading, serving as layer 0 multichain infrastructure in Web 3. 
             </SmallTitle>
-            <LaunchApp>
+            <LaunchApp href='https://app.dforce.network' target="_blank" rel="noreferrer">
                 Launch App
                 <Icon src={Launchapp}></Icon>
             </LaunchApp>
@@ -37,7 +37,7 @@ const Slogan: React.FC<SloganProps> = ({changeLanguage}) => {
                 <Item src={Arbitrum}></Item>
                 <Item src={Optimism}></Item>
             </List>
-            <Data/>
+            {/* <Data/> */}
         </Section>
     )
 }
@@ -51,7 +51,7 @@ const Section = styled.section`
     transform: translateX(-50%);
     flex-direction:column;
     align-items: center;
-    border-bottom: 1px solid rgba(255,255,255,0.15);
+    /* border-bottom: 1px solid rgba(255,255,255,0.15); */
     background-image: url(${bgSlogon});
     background-position:center top;
     background-size: cover;

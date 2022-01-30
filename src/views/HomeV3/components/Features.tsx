@@ -2,6 +2,7 @@ import React from 'react'
 import { useIntl } from 'react-intl'
 import styled from 'styled-components'
 import bg from 'assets/v3/Features_bg.svg'
+import bg_h5 from 'assets/v3/Features_bg_h5.svg'
 import Vault from 'assets/v3/Features_Vault.svg'
 import Bridge from 'assets/v3/Features_Bridge.svg'
 import PDLP from 'assets/v3/Features_PDLP.svg'
@@ -66,6 +67,7 @@ const SectionWrap = styled.div`
     display:flex;
     width:1920px;
     height:auto;
+    padding-top:320px;
     justify-content: center;
     position:relative;
     left: 50%;
@@ -77,6 +79,9 @@ const SectionWrap = styled.div`
     background-size: cover;
     @media (max-width: 767px) {
         width:100vw;
+        padding-top:120px;
+        background-position: center -18px;
+        background-image: url(${bg_h5});
     }
 `
 const Section = styled.section`
@@ -84,9 +89,9 @@ const Section = styled.section`
     width:1200px;
     height:auto;
     overflow: hidden;
-    margin: 0 auto 180px;
+    margin: 0 auto 108px;
     @media (max-width: 767px) {
-        width:calc(100vw - 60px);
+        width:calc(100vw - 40px);
         flex-direction:column;
         margin: 0;
     }
@@ -107,7 +112,7 @@ const Title = styled.div`
     line-height: 85px;
     margin-bottom:60px;
     @media (max-width: 767px) {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 30px;
         margin-bottom: 25px;
         text-align: center;
@@ -121,14 +126,14 @@ const Item = styled.div`
     height:550px;
     padding:50px 40px 50px;
     box-sizing: border-box;
-    background: linear-gradient(136deg, #0A0B1F 0%, rgba(17, 18, 43, 0.08) 100%);
+    background: linear-gradient(136deg, #0A0B1F 0%, rgba(17, 18, 43, 0.8) 100%);
     border-radius: 18px;
     border: 1px solid rgba(255, 255, 255, 0.08);
     margin-bottom:36px;
     @media (max-width: 767px) {
-        width:calc(100vw - 60px);
-        height:290px;
-        padding:25px 20px 25px;
+        width:100%;
+        height:auto;
+        padding:25px 20px 50px;
         flex-direction:column;
     }
 `
@@ -138,6 +143,7 @@ const Icon = styled.img`
     @media (max-width: 767px) {
         width:60px;
         height:65px;
+        margin-bottom:40px;
     }
 `
 const Sec =styled.div`
@@ -169,5 +175,8 @@ const Para = styled.div`
 const RightSection = styled.section`
     display:flex;
     flex-direction: column;
+    ${Item}:nth-child(2){
+        margin-bottom: 25px;
+    }
 `
 export default Features

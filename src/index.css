@@ -29,6 +29,7 @@ body {
   text-rendering: optimizeLegibility;
   background-color: #fff;
   font-size: 16px !important;
+  overflow-x: hidden;
   /* background: url('./assets/web/top-bg.png') no-repeat center top; */
   background-color: #0A0B1F;
 }
@@ -49,14 +50,14 @@ a {
 .header-wrap {
   display: flex;
   justify-content: space-between;
-  width: 100vw;
+  width: calc(100vw - 60px);
   /* position: relative;
   left: 50%;
   transform: translateX(-50%); */
   padding-top: 22px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom:150px
+  margin-bottom:120px
 }
 
 @media screen and (max-width: 768px) {
@@ -94,6 +95,8 @@ a {
 
 .target-wrap {
   width: 400px;
+  height:37px;
+  margin-left:-120px;
   display: flex;
   justify-content: space-between;
 }
@@ -130,7 +133,7 @@ a {
   min-width: 120px;
   left: -15px;
   top: 32px;
-  background: #262626;
+  background: #fff;
   border-radius: 4px;
   /* background: gold; */
   /* text-align: center; */
@@ -139,7 +142,7 @@ a {
 
   font-size: 14px;
   font-weight: 400;
-  color: #D4D9E0;
+  color: #000;
 }
 
 .target-wrap-item-list a {
@@ -147,9 +150,12 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   line-height: 28px;
-
+  color: #000!important;
   /* overflow-wrap: inherit; */
   white-space: nowrap;
+}
+.target-wrap-item-list a:hover{
+  color: #5EAFE7 !important;
 }
 .cur-language {
   margin-left: 50px;
@@ -311,7 +317,7 @@ a {
 .Gov-item-wrap {
   display: flex;
   justify-content: space-between;
-  padding-top: 50px;
+  padding-top: 26px;
 }
 
 .Gov-item {
@@ -519,7 +525,7 @@ a {
 
 .proiect-content {
   padding: 0 35px;
-  text-align: center;
+  text-align: left;
   font-size: 18px;
   font-weight: 500;
   color: #FFFFFF;
