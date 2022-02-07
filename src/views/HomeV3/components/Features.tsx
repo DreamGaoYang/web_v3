@@ -23,7 +23,7 @@ const Features: React.FC = () => {
                 <Item>
                     <Icon src={Vault}></Icon>
                     <Sec>
-                        <SubTitle>Valut</SubTitle>
+                        <SubTitle>Vault</SubTitle>
                         <Para>
                         Expanding USX’s collateral to a broader category of assets with isolated pools and customized risk parameters.
                         </Para>

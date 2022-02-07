@@ -8,7 +8,7 @@ import Security_4 from 'assets/v3/Security-4.svg'
 import Security_5 from 'assets/v3/Security-5.svg'
 import Security_6 from 'assets/v3/Security-6.svg'
 import Security_7 from 'assets/v3/Security-7.png'
-import Security_8 from 'assets/v3/Security-8.png'
+import Security_8 from 'assets/v3/Security-8.svg'
 import Security_9 from 'assets/v3/Security-9.svg'
 
 

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Header from './Header'
 import Data from './Data'
 import Launchapp from 'assets/v3/Launch-app.svg'
-import bgSlogon from 'assets/v3/bg-slogon.png'
+import bgSlogon from 'assets/v3/bg-slogon.svg'
 import ETH from 'assets/v3/ETH.svg'
 import BSC from 'assets/v3/BSC.svg'
 import Arbitrum from 'assets/v3/Arbitrum.svg'
@@ -44,7 +44,7 @@ const Slogan: React.FC<SloganProps> = ({changeLanguage}) => {
 const Section = styled.section`
     display:flex;
     width:1920px;
-    height:1273px;
+    height:1068px;
     overflow: hidden;
     position:relative;
     left: 50%;
@@ -57,7 +57,7 @@ const Section = styled.section`
     background-size: cover;
     @media (max-width: 767px) {
         width: 100%;
-        height:750px;
+        height:500px;
     }
 `
 const Title = styled.div`

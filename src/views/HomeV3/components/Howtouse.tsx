@@ -55,11 +55,11 @@ const Section = styled.section`
     width:1200px;
     height:auto;
     overflow: hidden;
-    margin: -450px auto 0;
+    margin: -200px auto 0;
     flex-direction:column;
     @media (max-width: 767px) {
         width:calc(100vw - 40px);
-        margin: -240px auto 0;
+        margin: -110px auto 0;
     }
 `
 const Title = styled.div`
