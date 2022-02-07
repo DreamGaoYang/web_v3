@@ -32,6 +32,7 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
     document.getElementsByTagName('body')[0].style.overflowY = "hidden"; 
     (document.getElementById('slogan') as HTMLElement).style.backgroundColor = "#000"; 
     (document.getElementById('slogan') as HTMLElement).style.zIndex = "9"; 
+    (document.getElementById('slogan') as HTMLElement).style.height = "100vh"; 
     setShowMenu(true)
   }
   const hide_Menu = ()=>{
@@ -39,6 +40,7 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
     document.getElementsByTagName('body')[0].style.overflowY = "auto"; 
     (document.getElementById('slogan') as HTMLElement).style.backgroundColor = "inherit"; 
     (document.getElementById('slogan') as HTMLElement).style.zIndex = "9"; 
+    (document.getElementById('slogan') as HTMLElement).style.height = "500px"; 
     setShowMenu(false)
   }
     return (
