@@ -314,7 +314,7 @@
   .Footer {
     display: flex;
     flex-direction: column;
-    width: calc(100vw - 20px);
+    width: calc(100vw - 40px);
     margin: 0 auto;
     display: flex;
     padding-top:22px;
@@ -334,21 +334,24 @@
   .Footer-right--itemwrap{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
   .Footer-right--title {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 500;
     color: #FFFFFF;
-    line-height: 36px;
+    line-height: 26px;
   }
-
+  .Footer-rightItem{
+    margin-top:8px;
+  }
   .logo-contact a,
   .Footer-right--item a {
     font-size: 12px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.6);
-    line-height: 38px;
-    margin-right: 11px;
+    line-height: 26px;
+    margin-right: 16px;
   }
 
   .logo-contact a:hover,
