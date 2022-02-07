@@ -354,7 +354,7 @@ const StyledHeader = styled.div`
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 15px;
-  margin-bottom: 80px;
+  margin-bottom: 26px;
   width: 100%;
   .spec{
       margin-right:20px;
