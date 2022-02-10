@@ -3,11 +3,11 @@ import { useIntl } from 'react-intl'
 
 import Security_1 from 'assets/v3/Security-1.svg'
 import Security_2 from 'assets/v3/Security-2.svg'
-import Security_3 from 'assets/v3/Security-3.png'
+import Security_3 from 'assets/v3/Security-3.svg'
 import Security_4 from 'assets/v3/Security-4.svg'
 import Security_5 from 'assets/v3/Security-5.svg'
 import Security_6 from 'assets/v3/Security-6.svg'
-import Security_7 from 'assets/v3/Security-7.png'
+import Security_7 from 'assets/v3/Security-7.svg'
 import Security_8 from 'assets/v3/Security-8.svg'
 import Security_9 from 'assets/v3/Security-9.svg'
 

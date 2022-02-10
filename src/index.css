@@ -269,7 +269,7 @@ a {
 .Sec-logos-item {
   width: 386px;
   height: 150px;
-  background: rgba(255, 255, 255, 0.05);
+  /* background: rgba(255, 255, 255, 0.05); */
   border-radius: 10px;
   margin-bottom: 20px;
 }
