@@ -22,7 +22,7 @@ const Item: React.FC = () => {
                     Community
                 </div>
                 <div className={'Community-title--sub'}>
-                    Join our community to get updates on new products and features, engage in governance discussions, and reinvent finance together!
+                Join our community to get updates on new products and features, engage in governance discussions, and build the next generation Web3 infrastructure together!
                 </div>
 
 

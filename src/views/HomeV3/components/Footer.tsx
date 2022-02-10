@@ -67,11 +67,11 @@ const Item: React.FC = () => {
                                         GitHub
                                     </a>
                                 </div>
-                                <div className={'Footer-right--item'}>
+                                {/* <div className={'Footer-right--item'}>
                                     <a href="#">
-                                        Integration Guides
+                                    Integration Guides
                                     </a>
-                                </div>
+                                </div> */}
                                 <div className={'Footer-right--item'}>
                                     <a href="https://github.com/dforce-network/documents/tree/master/audit_report" target="_blank" rel="noreferrer">
                                         Audit Reports

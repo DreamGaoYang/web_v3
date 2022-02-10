@@ -34,7 +34,7 @@ const Features: React.FC = () => {
                     <Sec>
                         <SubTitle>Bridge</SubTitle>
                         <Para>
-                        Enable immediate swaps of dForce-backed assets between different blockchain ecosystems. 
+                        Enable immediate swaps of dForce-backed assets between different blockchain ecosystems.
                         </Para>
                     </Sec>
                 </Item>

@@ -22,7 +22,7 @@ const Item: React.FC = () => {
                 <div className={'Gov'}>
                     <div className={'Gov-title'}>Governance</div>
                     <div className={'Gov-title-sub'}>
-                        Handing over the control of dForce to a distributed community united by DF tokens.
+                    dForce DAO allows any and all community members with DF tokens to participate in dForce's protocol governance.
                     </div>
 
                     <div className={'Gov-item-wrap'}>

@@ -15,36 +15,44 @@ const Howtouse: React.FC = () => {
     return (
         <Section>
             <Title>
-                How to use dForce
+            How to use dForce
             </Title>
             <List>
                 <Item>
                     <Icon src={Lending}></Icon>
-                    <SubTitle>Lending</SubTitle>
-                    <Para>
-                    Enabling decentralized lending and borrowing through smart contracts, automating the execution on the protocol. 
-                    </Para>
-                </Item>
-                <Item>
-                    <Icon src={Multi}></Icon>
-                    <SubTitle>Multi-Currency Stablecoins</SubTitle>
-                    <Para>
-                    Over-collateralized stablecoins minted against a variety of interest-carrying collaterals, tracking the price of different fiat currencies. 
-                    </Para>
+                    <ItemRight>
+                        <SubTitle>Lending</SubTitle>
+                        <Para>
+                        Enabling decentralized lending and borrowing through smart contracts, automating the execution on the protocol.
+                        </Para>
+                    </ItemRight>
                 </Item>
                 <Item>
                     <Icon src={Trading}></Icon>
-                    <SubTitle>Trading</SubTitle>
-                    <Para>
-                    Peer-to-Peer marketplace with aggregated liquidity across different platforms with the best price.
-                    </Para>
+                    <ItemRight>
+                        <SubTitle>Trading</SubTitle>
+                        <Para>
+                        Peer-to-Peer marketplace with aggregated liquidity across different platforms with the best price.
+                        </Para>
+                    </ItemRight>
+                </Item>
+                <Item>
+                    <Icon src={Multi}></Icon>
+                    <ItemRight>
+                        <SubTitle>Stablecoins</SubTitle>
+                        <Para>
+                        Over-collateralized stablecoins minted against a variety of interest-carrying collaterals, tracking the price of different fiat currencies.
+                        </Para>
+                    </ItemRight>
                 </Item>
                 <Item>
                     <Icon src={Staking}></Icon>
-                    <SubTitle>Staking</SubTitle>
-                    <Para>
-                    A hybrid staking model for DF holders to capture fee income, inflationary rewards, ecosystem airdrop across the network.
-                    </Para>
+                    <ItemRight>
+                        <SubTitle>Staking</SubTitle>
+                        <Para>
+                        A hybrid staking model for DF holders to capture fee income, inflationary rewards, and ecosystem airdrop across the network.
+                        </Para>
+                    </ItemRight>
                 </Item>
             </List>
         </Section>
@@ -76,18 +84,26 @@ const Title = styled.div`
 const List = styled.ul`
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 `
 const Item = styled.li`
-    width:50%;
-    margin-bottom: 90px;
+    width:590px;
+    margin-bottom: 20px;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    background: linear-gradient(136deg, #0A0B1F 0%, rgba(17, 18, 43, 0.08) 100%);
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     &:nth-child(3),&:nth-child(4){
         margin-bottom: 0;
     }
     @media (max-width: 767px) {
         width:100%;
-        margin-bottom: 40px;
+        margin-bottom: 10px;
+        padding:10px;
         &:nth-child(3){
-            margin-bottom: 40px;
+            margin-bottom: 10px;
         }
         &:nth-child(4){
             margin-bottom: 0;
@@ -97,12 +113,16 @@ const Item = styled.li`
 const Icon = styled.img`
     width:90px;
     height:90px;
-    margin-bottom: 20px;
+    margin:0 20px 20px 0;
     @media (max-width: 767px) {
         width:45px;
         height:45px;
-        margin-bottom: 10px;
+        margin:0 10px 10px 0;
     }
+`
+const ItemRight = styled.div`
+    display:flex;
+    flex-direction:column;
 `
 const SubTitle = styled.div`
     font-size: 26px;

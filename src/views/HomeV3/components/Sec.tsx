@@ -23,17 +23,17 @@ const Item: React.FC = () => {
             <div className={'Sec'}>
                 <div className={'Sec-top'}>
                     <div className={'Sec-title'}>
-                        Security
+                    Security
                     </div>
                     <div className={'Sec-title-sub'}>
-                        Adhering to the best practice to build security-focused protocols with checks and balances that minimize potential risks.
+                    Adhering to the best practice to build security-focused protocols with checks and balances that minimize potential risks.
                     </div>
                     <div className={'Sec-btns'}>
                         <a href="https://github.com/dforce-network/documents/tree/master/audit_report" className='Sec-btns-btn' target="_blank" rel="noreferrer">
-                            Audit Reports
+                        Audit Reports
                         </a>
                         <a href="https://immunefi.com/bounty/dforce" className='Sec-btns-btn Sec-btns-btn--spe' target="_blank" rel="noreferrer">
-                            Bug Bounty
+                        Bug Bounty
                         </a>
                     </div>
                 </div>

@@ -22,13 +22,13 @@ const Slogan: React.FC<SloganProps> = ({changeLanguage}) => {
     return (
         <Section id="slogan">
             <Header changeLanguage={changeLanguage}/>
-            <Title>Multichain Infrastructure in </Title>
+            <Title>Multichain Infrastructure in</Title>
             <SubTitle>{fmt({id:'Web3'})}</SubTitle>
             <SmallTitle>
-                A complete set of decentralized finance protocols covering assets, lending, trading, serving as layer 0 multichain infrastructure in Web 3. 
+                A complete set of decentralized finance protocols covering assets, lending, and trading, serving as open finance infrastructure in Web3.
             </SmallTitle>
             <LaunchApp href='https://app.dforce.network' target="_blank" rel="noreferrer">
-                Launch App
+            Launch APP
                 <Icon src={Launchapp}></Icon>
             </LaunchApp>
             <List>
