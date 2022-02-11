@@ -121,10 +121,10 @@ const Title = styled.div`
 const Item = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     width:584px;
-    height:550px;
-    padding:50px 40px 50px;
+    height:580px;
+    padding:50px 40px 0;
     box-sizing: border-box;
     background: linear-gradient(136deg, #0A0B1F 0%, rgba(17, 18, 43, 0.8) 100%);
     border-radius: 18px;
@@ -132,7 +132,7 @@ const Item = styled.div`
     margin-bottom:36px;
     @media (max-width: 767px) {
         width:100%;
-        height:auto;
+        height:290px;
         padding:25px 20px 50px;
         flex-direction:column;
     }
@@ -140,6 +140,7 @@ const Item = styled.div`
 const Icon = styled.img`
     width:120px;
     height:130px;
+    margin-bottom:80px;
     @media (max-width: 767px) {
         width:60px;
         height:65px;

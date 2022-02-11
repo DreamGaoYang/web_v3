@@ -44,7 +44,7 @@ const Slogan: React.FC<SloganProps> = ({changeLanguage}) => {
 const Section = styled.section`
     display:flex;
     width:1920px;
-    height:1068px;
+    height:1057px;
     overflow: hidden;
     position:relative;
     left: 50%;
