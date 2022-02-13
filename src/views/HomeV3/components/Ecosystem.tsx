@@ -31,7 +31,7 @@ const Item: React.FC = () => {
                             <div className={'proiect-content'}>
                                 Liqee is the world’s first and currently the largest lending protocol dedicated for liquid staking asset and a unified portal for liquid staking markets.
                             </div>
-                            <a href='https://liqee.io' className={'proiect-link'} target="_blank" rel="noreferrer">
+                            <a href='https://liqee.io' className={'proiect-link'} target="_blank" rel="noopener noreferrer">
                                 <img src={eco_link} alt="" />
                             </a>
                         </div>
@@ -43,7 +43,7 @@ const Item: React.FC = () => {
                             <div className={'proiect-content'}>
                                 EntroFi is an innovative protocol designed to channel DeFi liquidity directly toward acquisition/buyout of assets (RWA) or infrastructures with recuring cash flows in both real world and metaverse.
                             </div>
-                            <a href='https://entrofi.io' className={'proiect-link'} target="_blank" rel="noreferrer">
+                            <a href='https://entrofi.io' className={'proiect-link'} target="_blank" rel="noopener noreferrer">
                                 <img src={eco_link} alt="" />
                             </a>
                         </div>

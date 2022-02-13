@@ -34,7 +34,7 @@ const Item: React.FC = () => {
                                 Discussions around how to shape the future of dForce.
                             </div>
                             <div className={'Gov-proiect-link-wrap'}>
-                                <a className={'Gov-proiect-link'} href="https://forum.dforce.network" target="_blank" rel="noreferrer">
+                                <a className={'Gov-proiect-link'} href="https://forum.dforce.network" target="_blank" rel="noopener noreferrer">
                                     Forum
                                 </a>
                             </div>
@@ -48,7 +48,7 @@ const Item: React.FC = () => {
                                 Collectively decide on proposed protocol changes.
                             </div>
                             <div className={'Gov-proiect-link-wrap'}>
-                                <a className={'Gov-proiect-link'} href="https://snapshot.org/#/dforcenet.eth" target="_blank" rel="noreferrer">
+                                <a className={'Gov-proiect-link'} href="https://snapshot.org/#/dforcenet.eth" target="_blank" rel="noopener noreferrer">
                                     Snapshot
                                 </a>
                             </div>

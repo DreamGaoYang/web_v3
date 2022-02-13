@@ -16,7 +16,7 @@ const Item: React.FC = () => {
                     <div className={'Footer-left'}>
                         {/* {fmt({ id: "Investors" })} */}
                         <div className={'logo-wrap'}>
-                            <a href="https://app.dforce.network" target="_blank" rel="noreferrer">
+                            <a href="https://app.dforce.network" target="_blank" rel="noopener noreferrer">
                                 <img src={df_logo} alt="" />
                             </a>
                         </div>
@@ -35,22 +35,22 @@ const Item: React.FC = () => {
                             </div>
                             <div className={'Footer-right--itemwrap'}>
                                 <div className={'Footer-right--item'}>
-                                    <a href="https://app.dforce.network" target="_blank" rel="noreferrer">
+                                    <a href="https://app.dforce.network" target="_blank" rel="noopener noreferrer">
                                         Protocols
                                     </a>
                                 </div>
                                 <div className={'Footer-right--item'}>
-                                    <a href="https://docs.dforce.network" target="_blank" rel="noreferrer">
+                                    <a href="https://docs.dforce.network" target="_blank" rel="noopener noreferrer">
                                         Documentation
                                     </a>
                                 </div>
                                 <div className={'Footer-right--item'}>
-                                    <a href="https://medium.com/dforcenet" target="_blank" rel="noreferrer">
+                                    <a href="https://medium.com/dforcenet" target="_blank" rel="noopener noreferrer">
                                         Medium
                                     </a>
                                 </div>
                                 <div className={'Footer-right--item'}>
-                                    <a href="https://docs.dforce.network/use/faq" target="_blank" rel="noreferrer">
+                                    <a href="https://docs.dforce.network/use/faq" target="_blank" rel="noopener noreferrer">
                                         FAQs
                                     </a>
                                 </div>
@@ -63,7 +63,7 @@ const Item: React.FC = () => {
                             </div>
                             <div className={'Footer-right--itemwrap'}>
                                 <div className={'Footer-right--item'}>
-                                    <a href="https://github.com/dforce-network" target="_blank" rel="noreferrer">
+                                    <a href="https://github.com/dforce-network" target="_blank" rel="noopener noreferrer">
                                         GitHub
                                     </a>
                                 </div>
@@ -73,12 +73,12 @@ const Item: React.FC = () => {
                                     </a>
                                 </div> */}
                                 <div className={'Footer-right--item'}>
-                                    <a href="https://github.com/dforce-network/documents/tree/master/audit_report" target="_blank" rel="noreferrer">
+                                    <a href="https://github.com/dforce-network/documents/tree/master/audit_report" target="_blank" rel="noopener noreferrer">
                                         Audit Reports
                                     </a>
                                 </div>
                                 <div className={'Footer-right--item'}>
-                                    <a href="https://immunefi.com/bounty/dforce" target="_blank" rel="noreferrer">
+                                    <a href="https://immunefi.com/bounty/dforce" target="_blank" rel="noopener noreferrer">
                                         Bug Bounty
                                     </a>
                                 </div>
@@ -91,12 +91,12 @@ const Item: React.FC = () => {
                             </div>
                             <div className={'Footer-right--itemwrap'}>
                                 <div className={'Footer-right--item'}>
-                                    <a href="https://snapshot.org/#/dforcenet.eth" target="_blank" rel="noreferrer">
+                                    <a href="https://snapshot.org/#/dforcenet.eth" target="_blank" rel="noopener noreferrer">
                                         Snapshot
                                     </a>
                                 </div>
                                 <div className={'Footer-right--item'}>
-                                    <a href="https://forum.dforce.network" target="_blank" rel="noreferrer">
+                                    <a href="https://forum.dforce.network" target="_blank" rel="noopener noreferrer">
                                         Forum
                                     </a>
                                 </div>

@@ -29,10 +29,10 @@ const Item: React.FC = () => {
                     Adhering to the best practice to build security-focused protocols with checks and balances that minimize potential risks.
                     </div>
                     <div className={'Sec-btns'}>
-                        <a href="https://github.com/dforce-network/documents/tree/master/audit_report" className='Sec-btns-btn' target="_blank" rel="noreferrer">
+                        <a href="https://github.com/dforce-network/documents/tree/master/audit_report" className='Sec-btns-btn' target="_blank" rel="noopener noreferrer">
                         Audit Reports
                         </a>
-                        <a href="https://immunefi.com/bounty/dforce" className='Sec-btns-btn Sec-btns-btn--spe' target="_blank" rel="noreferrer">
+                        <a href="https://immunefi.com/bounty/dforce" className='Sec-btns-btn Sec-btns-btn--spe' target="_blank" rel="noopener noreferrer">
                         Bug Bounty
                         </a>
                     </div>
