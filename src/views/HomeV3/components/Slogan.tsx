@@ -70,6 +70,7 @@ const Title = styled.div`
         font-size: 21px;
         line-height: 44px;
         margin-bottom: 0;
+        text-align: center;
     }
 `
 const SubTitle = styled.div`
