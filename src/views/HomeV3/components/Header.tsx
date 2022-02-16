@@ -55,13 +55,16 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
                 <div className={'target-wrap'}>
 
                         <div className='target-wrap-item'>
-                            <a href="https://app.dforce.network/#/lending" target='_blank'>
-                                {fmt({ id: "LENDing" })}
+                            <a href="https://medium.com/dforcenet" target='_blank' rel="noopener noreferrer">
+                                {fmt({ id: "Annoucements" })}
                             </a>
                         </div>
 
                         <div className='target-wrap-item'>
-                            <span>
+                        <a href="https://forum.dforce.network/" target='_blank' rel="noopener noreferrer">
+                                {fmt({ id: "Forum" })}
+                            </a>
+                            {/* <span>
                                 {fmt({ id: "ASSETs" })}
                             </span>
 
@@ -75,12 +78,12 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
                                 <a href="https://goldx.dforce.network/" target='_blank'>
                                     {'GOLDx'}
                                 </a>
-                            </div>
+                            </div> */}
                         </div>
 
                         <div className='target-wrap-item'>
-                            <a href="https://trade.dforce.network/" target='_blank'>
-                                {fmt({ id: "TRADE" })}
+                            <a href="https://docs.dforce.network/" target='_blank' rel="noopener noreferrer">
+                                {fmt({ id: "Docs" })}
                             </a>
                         </div>
 
@@ -91,7 +94,10 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
                         </div> */}
 
                         <div className='target-wrap-item'>
-                            <span>{fmt({ id: "FARM" })}</span>
+                        <a href="https://github.com/dforce-network" target='_blank' rel="noopener noreferrer">
+                                {fmt({ id: "GitHub" })}
+                            </a>
+                            {/* <span>{fmt({ id: "FARM" })}</span>
 
                             <div className='target-wrap-item-list'>
                                 <a href="https://app.dforce.network/#/Mining" target='_blank'>
@@ -103,11 +109,14 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
                                 <a href="https://staking.dforce.network/" target='_blank'>
                                     {fmt({ id: "FARM__LEGACY_LIQUIDITY" })}
                                 </a>
-                            </div>
+                            </div> */}
                         </div>
 
                         <div className='target-wrap-item'>
-                            <span>
+                        <a href="https://github.com/dforce-network/documents/tree/master/audit_report" target='_blank' rel="noopener noreferrer">
+                                {fmt({ id: "Audit" })}
+                            </a>
+                            {/* <span>
                                 {fmt({ id: "GOVERNANCE" })}
                             </span>
 
@@ -115,13 +124,10 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
                                 <a href="https://snapshot.org/#/dforcenet.eth" target='_blank'>
                                     {fmt({ id: "VOTE" })}
                                 </a>
-                                {/* <a href="https://airdrop.dforce.network/" target='_blank'>
-                                    {fmt({ id: "AIRDROP" })}
-                                </a> */}
                                 <a href="https://forum.dforce.network" target='_blank'>
                                     {fmt({ id: "FORUM" })}
                                 </a>
-                            </div>
+                            </div> */}
                         </div>
 
                     </div>
@@ -175,14 +181,19 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
 
                         <div className="menu-item">
                         <h1>
-                            <a href="https://app.dforce.network/#/lending" target='_blank' onClick={hide_Menu}>
-                            <span>{fmt({ id: "LENDing" })}</span>
+                            <a href="https://medium.com/dforcenet" target='_blank' rel="noopener noreferrer" onClick={hide_Menu}>
+                            <span>{fmt({ id: "Annoucements" })}</span>
                             </a>
                         </h1>
                         </div>
 
                         <div className="menu-item">
-                        <h1 onClick={() => { setAssets(!showAssets) }}>
+                        <h1>
+                            <a href="https://forum.dforce.network/" target='_blank' rel="noopener noreferrer" onClick={hide_Menu}>
+                            <span>{fmt({ id: "Forum" })}</span>
+                            </a>
+                        </h1>
+                        {/* <h1 onClick={() => { setAssets(!showAssets) }}>
                             {fmt({ id: "ASSETs" })}
                             <img className={showAssets ? "rotate180" : ""} src={btn_up} />
                         </h1>
@@ -202,13 +213,13 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
                                 {'GOLDx'}
                             </span>
                             </a>
-                        </div>
+                        </div> */}
                         </div>
 
                         <div className="menu-item">
                         <h1>
-                            <a href="https://trade.dforce.network/" target='_blank' onClick={hide_Menu}>
-                            <span>{fmt({ id: "TRADE" })}</span>
+                            <a href="https://docs.dforce.network/" target='_blank' rel="noopener noreferrer" onClick={hide_Menu}>
+                            <span>{fmt({ id: "Docs" })}</span>
                             </a>
                         </h1>
                         </div>
@@ -222,7 +233,12 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
                         </div> */}
 
                         <div className="menu-item">
-                        <h1 onClick={() => { setFARM(!showFARM) }}>
+                        <h1>
+                            <a href="https://github.com/dforce-network" target='_blank' rel="noopener noreferrer" onClick={hide_Menu}>
+                            <span>{fmt({ id: "GitHub" })}</span>
+                            </a>
+                        </h1>
+                        {/* <h1 onClick={() => { setFARM(!showFARM) }}>
                             {fmt({ id: "FARM" })}
                             <img className={showFARM ? "rotate180" : ""} src={btn_up} />
                         </h1>
@@ -242,11 +258,16 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
                                 {fmt({ id: "FARM__LEGACY_LIQUIDITY" })}
                             </span>
                             </a>
-                        </div>
+                        </div> */}
                         </div>
 
                         <div className="menu-item">
-                        <h1 onClick={() => { setGOVERNANCE(!showGOVERNANCE) }}>
+                        <h1>
+                            <a href="https://github.com/dforce-network/documents/tree/master/audit_report" target='_blank' rel="noopener noreferrer" onClick={hide_Menu}>
+                            <span>{fmt({ id: "Audit" })}</span>
+                            </a>
+                        </h1>
+                        {/* <h1 onClick={() => { setGOVERNANCE(!showGOVERNANCE) }}>
                             {fmt({ id: "GOVERNANCE" })}
                             <img className={showGOVERNANCE ? "rotate180" : ""} src={btn_up} />
                         </h1>
@@ -256,17 +277,12 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
                                 {fmt({ id: "VOTE" })}
                             </span>
                             </a>
-                            {/* <a href="https://airdrop.dforce.network/" target='_blank' onClick={hide_Menu}>
-                            <span className="name">
-                                {fmt({ id: "AIRDROP" })}
-                            </span>
-                            </a> */}
                             <a href="https://forum.dforce.network" target='_blank' onClick={hide_Menu}>
                             <span className="name">
                                 {fmt({ id: "FORUM" })}
                             </span>
                             </a>
-                        </div>
+                        </div> */}
                         </div>
 
                         {/* <div className="menu-item">

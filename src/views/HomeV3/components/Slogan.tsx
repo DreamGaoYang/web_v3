@@ -22,10 +22,10 @@ const Slogan: React.FC<SloganProps> = ({changeLanguage}) => {
     return (
         <Section id="slogan">
             <Header changeLanguage={changeLanguage}/>
-            <Title>Layer 0 Open Finance Infrastructure in</Title>
+            <Title>DeFi Infrastructure in</Title>
             <SubTitle>{fmt({id:'Web3'})}</SubTitle>
             <SmallTitle>
-                A complete set of decentralized finance protocols covering assets, lending, and trading, serving as open finance infrastructure in Web3.
+            A complete set of decentralized finance protocols covering assets, lending, and trading, serving as DeFi infrastructure in Web3.
             </SmallTitle>
             <LaunchApp href='https://app.dforce.network' target="_blank" rel="noopener noreferrer">
             Launch APP
