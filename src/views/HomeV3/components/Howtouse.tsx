@@ -3,8 +3,10 @@ import { useIntl } from 'react-intl'
 import styled from 'styled-components'
 import Lending from 'assets/v3/Use_Lending.svg'
 import Multi from 'assets/v3/Use_Multi.svg'
-import Trading  from 'assets/v3/Use_Trading.svg'
+import Trading from 'assets/v3/Use_Trading.svg'
 import Staking from 'assets/v3/Use_Staking.svg'
+import Pos_Staking from 'assets/v3/Use_Pos_Staking.svg'
+import eco_link from 'assets/v3/btn-ecosystem.svg'
 
 
 const Howtouse: React.FC = () => {
@@ -15,7 +17,7 @@ const Howtouse: React.FC = () => {
     return (
         <Section>
             <Title>
-            How to use dForce
+                How to use dForce
             </Title>
             <List>
                 <Item>
@@ -23,7 +25,7 @@ const Howtouse: React.FC = () => {
                     <ItemRight>
                         <SubTitle>Lending</SubTitle>
                         <Para>
-                        Enabling decentralized lending and borrowing through smart contracts, automating the execution on the protocol.
+                            Enabling decentralized lending and borrowing through smart contracts, automating the execution on the protocol.
                         </Para>
                     </ItemRight>
                 </Item>
@@ -32,7 +34,7 @@ const Howtouse: React.FC = () => {
                     <ItemRight>
                         <SubTitle>Trading</SubTitle>
                         <Para>
-                        Peer-to-Peer marketplace with aggregated liquidity across different platforms with the best price.
+                            Peer-to-Peer marketplace with aggregated liquidity across different platforms with the best price.
                         </Para>
                     </ItemRight>
                 </Item>
@@ -41,17 +43,29 @@ const Howtouse: React.FC = () => {
                     <ItemRight>
                         <SubTitle>Stablecoins</SubTitle>
                         <Para>
-                        Over-collateralized stablecoins minted against a variety of interest-carrying collaterals, tracking the price of different fiat currencies.
+                            Over-collateralized stablecoins minted against a variety of interest-carrying collaterals, tracking the price of different fiat currencies.
                         </Para>
                     </ItemRight>
                 </Item>
                 <Item>
                     <Icon src={Staking}></Icon>
                     <ItemRight>
-                        <SubTitle>Staking</SubTitle>
+                        <SubTitle>DF Staking</SubTitle>
                         <Para>
-                        A hybrid staking model for DF holders to capture fee income, inflationary rewards, and ecosystem airdrop across the network.
+                            A hybrid staking model for DF holders to capture fee income, inflationary rewards, and ecosystem airdrop across the network.
                         </Para>
+                    </ItemRight>
+                </Item>
+                <Item>
+                    <Icon src={Pos_Staking}></Icon>
+                    <ItemRight>
+                        <SubTitle>PoS Staking</SubTitle>
+                        <Para>
+                            Providing validation service in PoS networks by participating in their governance and maintaining the security of the network, further aligning DeFi infrastructure with the broader blockchain ecosystem.
+                        </Para>
+                        <a href='https://pos.dforce.network/' className={'proiect-link-ex'} target="_blank" rel="noopener noreferrer">
+                            <img src={eco_link} alt="" />
+                        </a>
                     </ItemRight>
                 </Item>
             </List>
@@ -96,7 +110,7 @@ const Item = styled.li`
     border-radius: 18px;
     border: 1px solid rgba(255, 255, 255, 0.08);
     &:nth-child(3),&:nth-child(4){
-        margin-bottom: 0;
+        /* margin-bottom: 0; */
     }
     @media (max-width: 767px) {
         width:100%;
@@ -106,7 +120,7 @@ const Item = styled.li`
             margin-bottom: 10px;
         }
         &:nth-child(4){
-            margin-bottom: 0;
+            /* margin-bottom: 0; */
         }
     }
 `
@@ -123,6 +137,12 @@ const Icon = styled.img`
 const ItemRight = styled.div`
     display:flex;
     flex-direction:column;
+
+    a {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 10px;
+    }
 `
 const SubTitle = styled.div`
     font-size: 26px;

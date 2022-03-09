@@ -290,6 +290,19 @@
     margin-bottom: 10px;
   }
 
+  .Community-item-investor {
+    width: 32%;
+    height: auto;
+    /* border-radius: 20px; */
+    flex-direction: column;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+
+  .Community-item-investor img {
+    width: 100%;
+  }
+
   .Community-img-wrap {
     padding-top: 18px;
   }
@@ -416,6 +429,11 @@
   }
 
   .proiect-link img {
+    width: 23px;
+    height: 23px;
+  }
+
+  .proiect-link-ex img {
     width: 23px;
     height: 23px;
   }

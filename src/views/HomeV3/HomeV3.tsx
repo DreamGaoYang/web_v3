@@ -9,6 +9,7 @@ import Features from './components/Features'
 import Sec from './components/Sec'
 import Gov from './components/Gov'
 import Ecosystem from './components/Ecosystem'
+import Investors from './components/Investors'
 import Community from './components/Community'
 import Footer from './components/Footer'
 
@@ -45,6 +46,7 @@ const Home: React.FC<HomeProps> = ({ changeLanguage }) => {
       <Sec />
       <Gov />
       <Ecosystem />
+      <Investors />
       <Community />
       <Footer />
     </>
