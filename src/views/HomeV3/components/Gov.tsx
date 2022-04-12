@@ -47,7 +47,7 @@ const Item: React.FC = () => {
                                 <img src={icon10} alt="" />
                             </div>
                             <div className={'Gov-proiect-content'}>
-                                veDF holders can delegate your voting rights to governors of your choice
+                                veDF holders can delegate your voting rights to governors of your choice.
                             </div>
                             <div className={'Gov-proiect-link-wrap'}>
                                 <a className={'Gov-proiect-link'} href="https://app.dforce.network/#/Delegate" target="_blank" rel="noopener noreferrer">
