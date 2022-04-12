@@ -33,7 +33,7 @@ const Item: React.FC = () => {
                                 <img src={icon9} alt="" />
                             </div>
                             <div className={'Gov-proiect-content'}>
-                                A hybrid model featuring both Free Staking and Lock-up Staking
+                                A hybrid model featuring both Free Staking and Lock-up Staking.
                             </div>
                             <div className={'Gov-proiect-link-wrap'}>
                                 <a className={'Gov-proiect-link'} href="https://app.dforce.network/#/StakeDF" target="_blank" rel="noopener noreferrer">
