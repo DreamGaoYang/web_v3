@@ -9,26 +9,27 @@ import ETH from 'assets/v3/ETH.svg'
 import BSC from 'assets/v3/BSC.svg'
 import Arbitrum from 'assets/v3/Arbitrum.svg'
 import Optimism from 'assets/v3/Optimism.svg'
+import Polygon from 'assets/v3/Polygon.svg'
 
 interface SloganProps {
     changeLanguage: (newLocale: string) => void
 }
 
-const Slogan: React.FC<SloganProps> = ({changeLanguage}) => {
+const Slogan: React.FC<SloganProps> = ({ changeLanguage }) => {
     const intl = useIntl()
     const fmt = intl.formatMessage
     // {/* {fmt({ id: "Investors" })} */}
 
     return (
         <Section id="slogan">
-            <Header changeLanguage={changeLanguage}/>
+            <Header changeLanguage={changeLanguage} />
             <Title>DeFi Infrastructure in</Title>
-            <SubTitle>{fmt({id:'Web3'})}</SubTitle>
+            <SubTitle>{fmt({ id: 'Web3' })}</SubTitle>
             <SmallTitle>
-            A complete set of decentralized finance protocols covering assets, lending, and trading, serving as DeFi infrastructure in Web3.
+                A complete set of decentralized finance protocols covering assets, lending, and trading, serving as DeFi infrastructure in Web3.
             </SmallTitle>
             <LaunchApp href='https://app.dforce.network' target="_blank" rel="noopener noreferrer">
-            Launch APP
+                Launch APP
                 <Icon src={Launchapp}></Icon>
             </LaunchApp>
             <List>
@@ -36,6 +37,7 @@ const Slogan: React.FC<SloganProps> = ({changeLanguage}) => {
                 <Item src={BSC}></Item>
                 <Item src={Arbitrum}></Item>
                 <Item src={Optimism}></Item>
+                <Item src={Polygon}></Item>
             </List>
             {/* <Data/> */}
         </Section>

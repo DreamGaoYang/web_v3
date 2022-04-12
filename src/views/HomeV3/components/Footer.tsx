@@ -73,12 +73,12 @@ const Item: React.FC = () => {
                                     </a>
                                 </div> */}
                                 <div className={'Footer-right--item'}>
-                                    <a href="https://github.com/dforce-network/documents/tree/master/audit_report" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://docs.dforce.network/developer/audit-reports" target="_blank" rel="noopener noreferrer">
                                         Audit Reports
                                     </a>
                                 </div>
                                 <div className={'Footer-right--item'}>
-                                    <a href="https://immunefi.com/bounty/dforce" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://docs.dforce.network/developer/bug-bounty" target="_blank" rel="noopener noreferrer">
                                         Bug Bounty
                                     </a>
                                 </div>
@@ -90,6 +90,16 @@ const Item: React.FC = () => {
                                 Governance
                             </div>
                             <div className={'Footer-right--itemwrap'}>
+                                <div className={'Footer-right--item'}>
+                                    <a href="https://app.dforce.network/#/StakeDF" target="_blank" rel="noopener noreferrer">
+                                        Staking
+                                    </a>
+                                </div>
+                                <div className={'Footer-right--item'}>
+                                    <a href="https://app.dforce.network/#/Delegate" target="_blank" rel="noopener noreferrer">
+                                        Delegation
+                                    </a>
+                                </div>
                                 <div className={'Footer-right--item'}>
                                     <a href="https://snapshot.org/#/dforcenet.eth" target="_blank" rel="noopener noreferrer">
                                         Snapshot

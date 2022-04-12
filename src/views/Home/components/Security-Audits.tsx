@@ -67,7 +67,7 @@ const Security_Audits: React.FC = () => {
 
                     <div className={'btn-wrap'}>
                         <div className={'btn'}>
-                            <a href="https://github.com/dforce-network/documents/tree/master/audit_report" target='_blank'>
+                            <a href="https://docs.dforce.network/developer/audit-reports" target='_blank'>
                                 <span>{fmt({ id: "Audit_Reports" })}</span>
                             </a>
                         </div>
@@ -79,7 +79,7 @@ const Security_Audits: React.FC = () => {
                                 //         :
                                 //         "https://docs.dforce.network/devs/bug-bounty"
                                 // }
-                                href='https://immunefi.com/bounty/dforce'
+                                href='https://docs.dforce.network/developer/bug-bounty'
                                 target='_blank'>
                                 <span>{fmt({ id: "Bug_Bounty" })}</span>
                             </a>

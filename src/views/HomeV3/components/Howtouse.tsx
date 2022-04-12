@@ -20,6 +20,25 @@ const Howtouse: React.FC = () => {
                 How to use dForce
             </Title>
             <List>
+                {/* <Item>
+                    <Icon src={Multi}></Icon>
+                    <ItemRight>
+                        <SubTitle>Stablecoins</SubTitle>
+                        <Para>
+                            Over-collateralized stablecoins minted against a variety of interest-carrying collaterals, tracking the price of different fiat currencies.
+                        </Para>
+                    </ItemRight>
+                </Item> */}
+                <Item>
+                    <Icon src={Multi}></Icon>
+                    <ItemRight>
+                        <SubTitle>USX</SubTitle>
+                        <Para>
+                            An over-collateralized stablecoin with a dual model for minting (pool-based & vault-based).
+                        </Para>
+                    </ItemRight>
+                </Item>
+
                 <Item>
                     <Icon src={Lending}></Icon>
                     <ItemRight>
@@ -29,24 +48,7 @@ const Howtouse: React.FC = () => {
                         </Para>
                     </ItemRight>
                 </Item>
-                <Item>
-                    <Icon src={Trading}></Icon>
-                    <ItemRight>
-                        <SubTitle>Trading</SubTitle>
-                        <Para>
-                            Peer-to-Peer marketplace with aggregated liquidity across different platforms with the best price.
-                        </Para>
-                    </ItemRight>
-                </Item>
-                <Item>
-                    <Icon src={Multi}></Icon>
-                    <ItemRight>
-                        <SubTitle>Stablecoins</SubTitle>
-                        <Para>
-                            Over-collateralized stablecoins minted against a variety of interest-carrying collaterals, tracking the price of different fiat currencies.
-                        </Para>
-                    </ItemRight>
-                </Item>
+
                 <Item>
                     <Icon src={Staking}></Icon>
                     <ItemRight>
@@ -56,6 +58,17 @@ const Howtouse: React.FC = () => {
                         </Para>
                     </ItemRight>
                 </Item>
+
+                <Item>
+                    <Icon src={Trading}></Icon>
+                    <ItemRight>
+                        <SubTitle>Trading</SubTitle>
+                        <Para>
+                            Peer-to-Peer marketplace with aggregated liquidity across different platforms with the best price.
+                        </Para>
+                    </ItemRight>
+                </Item>
+
                 <Item>
                     <Icon src={Pos_Staking}></Icon>
                     <ItemRight>

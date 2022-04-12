@@ -113,7 +113,7 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
                         </div>
 
                         <div className='target-wrap-item'>
-                        <a href="https://github.com/dforce-network/documents/tree/master/audit_report" target='_blank' rel="noopener noreferrer">
+                        <a href="https://docs.dforce.network/developer/audit-reports" target='_blank' rel="noopener noreferrer">
                                 {fmt({ id: "Audit" })}
                             </a>
                             {/* <span>
@@ -263,7 +263,7 @@ const Header: React.FC<HomeProps> = ({ changeLanguage }) => {
 
                         <div className="menu-item">
                         <h1>
-                            <a href="https://github.com/dforce-network/documents/tree/master/audit_report" target='_blank' rel="noopener noreferrer" onClick={hide_Menu}>
+                            <a href="https://docs.dforce.network/developer/audit-reports" target='_blank' rel="noopener noreferrer" onClick={hide_Menu}>
                             <span>{fmt({ id: "Audit" })}</span>
                             </a>
                         </h1>

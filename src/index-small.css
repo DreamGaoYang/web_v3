@@ -12,16 +12,16 @@
     bottom: 0;
     z-index: 9999;
   }
-  
+
   .mobile-header .mobile-menu .mobile-menu-body .menu-item {
     margin-bottom: 10px;
   }
-  
+
   .mobile-header .mobile-menu .mobile-menu-body .menu-item-wrap {
     height: 90vh;
     overflow: auto;
   }
-  
+
   .mobile-header .mobile-menu .mobile-menu-body .menu-item h1 {
     font-size: 16px;
     font-weight: 500;
@@ -32,21 +32,21 @@
     position: relative;
     padding-left: 30px;
   }
-  
+
   .mobile-header .mobile-menu .mobile-menu-body .menu-item h1 i,
   .mobile-header .mobile-menu .mobile-menu-body .menu-item h1 img {
     width: 12px;
     height: 45px;
     float: right;
   }
-  
+
   .mobile-header .mobile-menu .mobile-menu-body .menu-item h1 a {
     color: #fff;
     display: block;
     width: 100%;
     height: 100%;
   }
-  
+
   .mobile-header .mobile-menu .mobile-menu-body .menu-item h1::after {
     content: "";
     position: absolute;
@@ -57,21 +57,21 @@
     left: 15px;
     top: 16px;
   }
-  
+
   .mobile-header .mobile-menu .mobile-menu-body .menu-item .Staking {
     display: flex;
   }
-  
+
   .mobile-header .mobile-menu .mobile-menu-body .menu-item .Staking span {
     margin-right: 10px;
   }
-  
+
   .mobile-header .mobile-menu .mobile-menu-body .menu-item .Staking i,
   .mobile-header .mobile-menu .mobile-menu-body .menu-item .Staking svg {
     width: 16px;
     height: 45px;
   }
-  
+
   .mobile-header .mobile-menu .mobile-menu-body .menu-item .items {
     background-color: rgba(255, 255, 255, 0.05);
     margin-bottom: 12px;
@@ -79,12 +79,12 @@
     padding-right: 0;
     height: auto;
   }
-  
+
   .mobile-header .mobile-menu .mobile-menu-body .menu-item .items a {
     display: block;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
-  
+
   .mobile-header .mobile-menu .mobile-menu-body .menu-item .items a .title {
     display: block;
     font-size: 15px;
@@ -93,7 +93,7 @@
     height: 36px;
     padding-top: 10px;
   }
-  
+
   .mobile-header .mobile-menu .mobile-menu-body .menu-item .items a .title-plus {
     display: block;
     font-size: 13px;
@@ -101,31 +101,32 @@
     color: #555555;
     margin-bottom: 8px;
   }
-  
+
   .mobile-header .mobile-menu .mobile-menu-body .menu-item .items a:last-child {
     border-bottom: 1px solid transparent;
   }
-  
+
   .mobile-header .mobile-menu .mobile-menu-body .menu-item .item-hidden {
     height: 0;
     overflow: hidden;
   }
-  
+
   .mobile-header .mobile-menu .mobile-menu-body .menu-item .items-icons a {
     display: flex;
   }
-  
+
   .mobile-header .mobile-menu .mobile-menu-body .menu-item .items-icons a .icon i,
   .mobile-header .mobile-menu .mobile-menu-body .menu-item .items-icons a .icon svg {
     width: 20px;
     height: 45px;
   }
-  
+
   .mobile-header .mobile-menu .mobile-menu-body .menu-item .items-icons a .name {
     line-height: 45px;
     color: rgba(255, 255, 255, 0.9);
     margin-left: 10px;
   }
+
   /* Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec Sec */
   .Sec {
     width: 100%;
@@ -219,6 +220,10 @@
   .Gov-item-wrap {
     padding-top: 20px;
     flex-direction: column;
+  }
+
+  .second {
+    padding-top: 0px!important;
   }
 
   .Gov-item {
@@ -330,7 +335,7 @@
     width: calc(100vw - 40px);
     margin: 0 auto;
     display: flex;
-    padding-top:22px;
+    padding-top: 22px;
     padding-bottom: 30px;
   }
 
@@ -344,20 +349,24 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  .Footer-right--itemwrap{
+
+  .Footer-right--itemwrap {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
+
   .Footer-right--title {
     font-size: 16px;
     font-weight: 500;
     color: #FFFFFF;
     line-height: 26px;
   }
-  .Footer-rightItem{
-    margin-top:8px;
+
+  .Footer-rightItem {
+    margin-top: 8px;
   }
+
   .logo-contact a,
   .Footer-right--item a {
     font-size: 12px;

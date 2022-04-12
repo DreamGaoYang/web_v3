@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
                                 intl_locale === 'cn' ? 'https://docs-cn.dforce.network' : "https://docs.dforce.network"
                             } target='_blank'>{fmt({ id: "FAQ" })}</a>
                             <a href="https://github.com/dforce-network" target='_blank'>{fmt({ id: "Developers" })}</a>
-                            <a href="https://github.com/dforce-network/documents/tree/master/audit_report" target='_blank'>{fmt({ id: "Audit_Reports" })}</a>
+                            <a href="https://docs.dforce.network/developer/audit-reports" target='_blank'>{fmt({ id: "Audit_Reports" })}</a>
                             <a href="https://github.com/dforce-network/documents/tree/master/white_papers" target='_blank'>{fmt({ id: "Whitepaper" })}</a>
                         </div>
                     </div>
