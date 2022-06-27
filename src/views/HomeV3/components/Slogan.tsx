@@ -10,6 +10,8 @@ import BSC from 'assets/v3/BSC.svg'
 import Arbitrum from 'assets/v3/Arbitrum.svg'
 import Optimism from 'assets/v3/Optimism.svg'
 import Polygon from 'assets/v3/Polygon.svg'
+import Avalanche from 'assets/v3/Avalanche.svg'
+import kava from 'assets/v3/kava.svg'
 
 interface SloganProps {
     changeLanguage: (newLocale: string) => void
@@ -38,6 +40,8 @@ const Slogan: React.FC<SloganProps> = ({ changeLanguage }) => {
                 <Item src={Arbitrum}></Item>
                 <Item src={Optimism}></Item>
                 <Item src={Polygon}></Item>
+                <Item src={Avalanche}></Item>
+                <Item src={kava}></Item>
             </List>
             {/* <Data/> */}
         </Section>

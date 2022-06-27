@@ -50,7 +50,7 @@ const Item: React.FC = () => {
                                     </a>
                                 </div>
                                 <div className={'Footer-right--item'}>
-                                    <a href="https://docs.dforce.network/use/faq" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://docs.dforce.network/faq-and-guides/faq" target="_blank" rel="noopener noreferrer">
                                         FAQs
                                     </a>
                                 </div>
